@@ -17,26 +17,24 @@
         <ul>
             <li><a href="#latest-posts">Latest Posts</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
+        <section id="search">
+            <input type="text" id="searchBar" placeholder="Search articles..." oninput="filterPosts()">
+        </section>
         <section id="latest-posts">
             <h2>Latest Posts</h2>
-            <article>
-                <h3>Post 1: The Algorithmic Means of Production</h3>
-                <p>
-                    Technology is the new battleground for the working class. Algorithms aren't neutral—they're tools of capital.
-                    <a href="#">Read more...</a>
-                </p>
-            </article>
-            <article>
-                <h3>Post 2: Digital Labor and the Commodification of Time</h3>
-                <p>
-                    How does the gig economy exploit workers under the guise of "flexibility"? A Marxist analysis of digital labor platforms.
-                    <a href="#">Read more...</a>
-                </p>
-            </article>
+            <div id="posts-container">
+                <article class="post">
+                    <h3>Work in Progress</h3>
+                    <p>Details about this article are coming soon.</p>
+                </article>
+                <article class="post">
+                    <h3>Work in Progress</h3>
+                    <p>Details about this article are coming soon.</p>
+                </article>
+            </div>
         </section>
         <section id="about">
             <h2>About</h2>
@@ -44,18 +42,6 @@
                 Technomarx is a blog dedicated to analyzing how technology shapes power, labor, and class relations in the digital age.
                 Inspired by the works of Marx, this platform seeks to understand the capitalist forces behind modern tech.
             </p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
         </section>
     </main>
     <footer>
