@@ -1,8 +1,8 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    color: #e0e0e0;
-    background-color: #121212;
+    color: #d4d4d4;
+    background-color: #0a0f1f;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -10,11 +10,11 @@ body {
 
 /* Header */
 header {
-    background: #1e1e1e;
-    color: #e63946;
+    background: #12234d;
+    color: #3da9fc;
     padding: 2rem 1rem;
     text-align: center;
-    border-bottom: 2px solid #e63946;
+    border-bottom: 2px solid #3da9fc;
 }
 
 header h1 {
@@ -29,7 +29,7 @@ header p {
 
 /* Navigation */
 nav {
-    background: #333;
+    background: #1c294a;
     text-align: center;
     padding: 0.5rem 0;
 }
@@ -47,88 +47,60 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0e0e0;
+    color: #d4d4d4;
     text-decoration: none;
     padding: 0.5rem;
 }
 
 nav ul li a:hover {
-    background: #e63946;
-    color: #121212;
+    background: #3da9fc;
+    color: #0a0f1f;
     border-radius: 5px;
 }
 
-/* Main Content */
-main {
-    padding: 2rem;
+/* Search Bar */
+#search {
+    text-align: center;
+    margin: 2rem 0;
 }
 
-section {
-    margin-bottom: 2rem;
+#searchBar {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #3da9fc;
+    border-radius: 5px;
+    background: #12234d;
+    color: #d4d4d4;
 }
 
-section h2 {
-    font-size: 2rem;
-    color: #e63946;
-    border-bottom: 2px solid #e63946;
-    padding-bottom: 0.5rem;
+/* Posts */
+#posts-container {
+    display: grid;
+    gap: 2rem;
+}
+
+article.post {
+    background: #1c294a;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 article h3 {
     font-size: 1.5rem;
-    color: #e63946;
+    color: #3da9fc;
     margin-bottom: 0.5rem;
 }
 
 article p {
-    margin-bottom: 1rem;
-}
-
-article a {
-    color: #e63946;
-    text-decoration: none;
-}
-
-article a:hover {
-    text-decoration: underline;
-}
-
-/* Form */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 0.5rem;
-}
-
-form input, form textarea, form button {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-}
-
-form input, form textarea {
-    background: #1e1e1e;
-    color: #e0e0e0;
-}
-
-form button {
-    background: #e63946;
-    color: #121212;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #c92034;
+    color: #d4d4d4;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #1e1e1e;
-    border-top: 2px solid #e63946;
+    background: #12234d;
+    border-top: 2px solid #3da9fc;
 }
